@@ -1,9 +1,12 @@
 # Zadarma OpenAPI Specification
 
-OpenAPI 3.0.3 specification for the [Zadarma](https://zadarma.com) VoIP API.
+OpenAPI 3.0.3 specifications for the [Zadarma](https://zadarma.com) VoIP API and Teamsale CRM API.
 
 - **Live API docs:** https://zadarma.com/en/support/api/
 - **Base URL:** `https://api.zadarma.com`
+- **Specs:**
+  - `spec/v1/openapi.json` — Zadarma VoIP API
+  - `spec/v1/openapiteamsale.json` — Zadarma Teamsale CRM API
 
 ## Quick Start
 
@@ -25,9 +28,9 @@ Build a standalone HTML documentation file:
 npx @redocly/cli build-docs spec/v1/openapi.json -o index.html
 ```
 
-## Using the Spec
+## Using the Specs
 
-Import `spec/v1/openapi.json` into tools like:
+Import either `spec/v1/openapi.json` or `spec/v1/openapiteamsale.json` into tools like:
 
 - [Postman](https://www.postman.com/) — import as OpenAPI collection
 - [openapi-generator](https://openapi-generator.tech/) — generate client libraries
